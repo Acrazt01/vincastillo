@@ -1,0 +1,211 @@
+/*Variables*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root{
+/*Colores*/
+--green-color:#7ACC2D;
+--green-dark-color: #5e9e22;
+--White-color: white;
+--grey-color: grey;
+--grey-light-color: grey;
+--Dark: #313337;
+/*Tipografia*/
+--Normal: 12px;
+--font: 'Open Sans', sans-serif;
+/*Espaciados*/
+--Space: 10px;
+/*Shadows*/
+--Shadow:0 0 1px var(--grey-light-color);
+
+}
+
+html,body{
+  padding: 0px; 
+  margin: 0px;
+  font-size: var(--Normal);
+  font-family: var(--font);
+}
+
+nav{
+  background-color: var(--green-color);
+  padding: var(--Space);
+  color: var(--White-color);
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_options{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: var(--Space);
+  padding-right: var(--Space);
+
+}
+
+.option{
+  padding-left: 20px;
+  margin-left: var(--Space);
+}
+
+.option,a:hover{
+  color: var(--White-color);
+}
+
+.option, a{
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+.main_section{
+  text-align: center;
+  padding: 7%;
+  text-align: center;
+}
+
+.main_text{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../Images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 10%;
+  display: flex;
+}
+
+.product{
+  padding: var(--Space);
+  margin-top: -240px;
+}
+
+.product .content{
+  background-color: var(--White-color);
+  padding: 15px;
+  box-shadow: var(--Shadow);
+}
+
+.image_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--Space);
+  font-size: 17px;
+  color: var(--White-color);
+  border: 0;
+  cursor: pointer;
+
+}
+
+.main_button:hover{
+  background-color: var(--green-dark-color);
+
+}
+
+.Others_products{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Other_product{
+  background-color: var(--White-color);
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+  font-size: var(--Normal);
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-bottom: 127px;
+  padding-top: 100px;
+  border-bottom: 5px;
+  border-bottom-color: var(--grey-color);
+
+
+}
+
+.Other_product_description{
+  text-align: justify;
+}
+
+.Mentions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Mentions_Title{
+  font-size: 30px;
+  font-family: 'Open sans',bold;
+  margin-bottom: 39px;
+}
+
+.mentions_container{
+  display: inherit;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 50px 0px 50px;
+  margin: 0 0 55px 0;
+}
+
+.mention{
+  margin: 10px;
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+  border-radius: 2px 2px 2px 2px;
+  width: 239px;
+  height: 186px;
+ 
+}
+
+.mention_image{
+  height: 104px;
+  width: 239px;
+}
+
+.mention_name{
+  font-size: 17px;
+  margin: 0;
+  padding: 0 5px 0 5px; 
+}
+
+.mention_Description{
+  font-size: var(--Normal);
+  text-align: left;
+  margin: 0;
+  padding: 0 5px 0 5px;
+}
+
+footer{
+  height: 43px;
+  background-color: var(--Dark);
+  color: var(--White-color);
+  font-size: var(--Normal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_Link{
+  color: var(--White-color);
+  font-size: var(--Normal);
+  padding-left: var(--Space); 
+}
+
+.footer_email{
+  color: var(--grey-color);
+  font-size: var(--Normal);
+  padding-right: var(--Space);
+
+}

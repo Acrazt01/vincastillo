@@ -1,0 +1,10 @@
+body{
+  background-color: aqua;
+}
+
+.GIF{
+  border: 0.5cm;
+  border-color: blue;
+  padding: 0.5cm;
+  margin: 1cm;
+}
